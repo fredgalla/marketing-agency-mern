@@ -9,7 +9,7 @@ function Admin() {
   function handleLogin(e) {
     e.preventDefault();
 
-    fetch("http://localhost:3000/login", {
+    fetch(`${import.meta.env.VITE_API_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -32,7 +32,7 @@ function Admin() {
   }
 
   function loadSubmissions(authToken) {
-    fetch("http://localhost:3000/submissions", {
+    fetch(`${import.meta.env.VITE_API_URL}/submissions`, {
       headers: {
         Authorization: `Bearer ${authToken}`
       }
@@ -60,7 +60,7 @@ function Admin() {
   }
 
   function handleDelete(id) {
-    fetch(`http://localhost:3000/submissions/${id}`, {
+    fetch(`${import.meta.env.VITE_API_URL}/submissions/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`

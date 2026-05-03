@@ -19,7 +19,7 @@ function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("http://localhost:3000/contact", {
+    fetch(`${import.meta.env.VITE_API_URL}/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
