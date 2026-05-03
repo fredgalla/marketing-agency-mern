@@ -1,17 +1,37 @@
 # Marketing Agency MERN App
 
-A full-stack marketing agency website with a contact form, admin dashboard, MongoDB database, and JWT authentication.
+A full-stack web application built with React, Node.js, Express, and MongoDB.  
+It includes a marketing website, a contact form, and a JWT-protected admin dashboard to manage submissions.
 
-## Features
+## Live Demo
 
+Frontend: https://marketing-agency-mern.vercel.app/  
+Backend API: https://marketing-agency-mern.onrender.com
+
+## Key Features
+
+- Full-stack MERN application
 - Responsive marketing website
-- Contact form
-- Express API
-- MongoDB database storage
-- Admin login
-- JWT authentication
-- View and delete submissions
-- Deployed frontend and backend
+- Contact form with real-time submission
+- MongoDB database integration
+- Admin dashboard with authentication
+- JWT-based protected API routes
+- Create, read, and delete submissions
+- Deployed using Vercel and Render
+
+## Project Structure
+
+/client   → React frontend  
+/server   → Express backend  
+/models   → MongoDB schemas  
+
+## Future Improvements
+
+- Add edit/update functionality
+- Add pagination for submissions
+- Improve UI/UX design
+- Add user authentication system
+- Add rate limiting and security enhancements
 
 ## Tech Stack
 
@@ -46,3 +66,11 @@ DELETE /submissions/:id
 - MongoDB models
 - Authentication
 - Deployment
+
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin.png)
