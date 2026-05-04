@@ -99,6 +99,23 @@ nav a {
   text-align: center;
 }
 
+.about {
+  padding: 80px 20px;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+}
+
 .contact form {
   max-width: 500px;
   margin: 20px auto;

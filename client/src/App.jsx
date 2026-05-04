@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Admin from "./components/Admin";
+import About from "./components/About";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Header />
       <Hero />
       <Services />
+      <About />
       <Contact />
     </>
   );
