@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { useEffect } from "react";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
@@ -17,6 +18,7 @@ function Home() {
       <Services />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 }
