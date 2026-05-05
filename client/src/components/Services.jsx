@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <section id="services" className="services">
+    <section id="services" className="services fade-in">
       <h2>Our Services</h2>
 
       <div className="services-container">

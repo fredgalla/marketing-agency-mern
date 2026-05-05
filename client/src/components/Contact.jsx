@@ -37,7 +37,7 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact fade-in">
       <h2>Contact Us</h2>
 
       <form onSubmit={handleSubmit}>

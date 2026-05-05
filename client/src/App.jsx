@@ -1,5 +1,6 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
+import { useEffect } from "react";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -21,6 +22,33 @@ function Home() {
 }
 
 function App() {
+  useEffect(() => {
+  const elements = document.querySelectorAll(".fade-in");
+
+  elements.forEach((el) => {
+    el.classList.remove("show");
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => {
+    elements.forEach((el) => observer.unobserve(el));
+  };
+}, []);
+
   return (
     <div>
       <nav className="page-switcher">
